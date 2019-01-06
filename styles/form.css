@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,700,900');
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,600,700,900');
+@import url("https://fonts.googleapis.com/css?family=Rubik+Mono+One&text=ACEFGHIJMNOPRSTUVXY.%20");
+
+body,
+input,
+select,
+textarea,
+body * {
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+body::after, body::before,
+input::after,
+input::before,
+select::after,
+select::before,
+textarea::after,
+textarea::before,
+body *::after,
+body *::before {
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  padding: 0px;
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  background-image: url(../img/ashoka2.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.register {
+  content: '';
+  position: absolute;
+  background: #050306e3;
+  height: auto;
+  width: 100%;
+}
+
+.register_heading {
+  font-size: 3vw;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  text-align: center;
+  z-index: 20;
+  color: #fff;
+}
+
+.register_form {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+  border: 2px solid #fff;
+  height: auto;
+  margin-bottom: 100px;
+  margin-top: 50px;
+  padding-bottom: 80px;
+}
+
+.checks{
+  font-size: 1.3vw;
+  color: #f0d2d2;
+}
+.helper{
+  color: #f0d2d2;
+}
+.cc{
+  color: #e9736e;
+margin-left: -20%;
+position: absolute;
+font-size: 1.3vw;
+font-family: 'Montserrat',sans-serif;
+margin-left: -11%;
+margin-top: 2%;;
+}
+.register_form > input{
+  height: 50px;
+width: 42%;
+position: relative;
+margin-left: -1%;
+margin-top: 6%;
+border: none;
+outline: none;
+background: transparent;
+border-bottom: 2px solid #fff;
+font-size: 1.5vw;
+color: #f0d2d2;
+}
+.register_form > input:focus{
+  border-bottom: 3px solid #e9736e;
+}
+
+.register_form > input::placeholder{
+  font-size: 1.2vw;
+}
+.helper{
+  position: relative;
+   left: 24%;
+}
+
+
+.checkbox label,
+.form-radio label {
+  position: relative;
+  cursor: pointer;
+  padding-left: 2rem;
+
+  display: block;
+}
+
+.checkbox input,
+.form-radio input {
+  width: auto;
+  opacity: 0.00000001;
+  position: absolute;
+
+}
+
+
+.helper {
+  position: relative;
+  margin-left: 28%;
+  top: -0.25rem;
+  cursor: pointer;
+  display: block;
+  font-size: 1rem;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  color: #999;
+}
+
+.checkbox {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.checkbox .helper {
+  color: #e9736e;
+  position: absolute;
+  top: 0.1em;
+  left: 0;
+  width: 1.3rem;
+  height: 1.3rem;
+  z-index: 0;
+  border: 0.125rem solid currentColor;
+  border-radius: 0.0625rem;
+  -webkit-transition: border-color 0.28s ease;
+  transition: border-color 0.28s ease;
+
+}
+
+.checkbox .helper::before, .checkbox .helper::after {
+  position: absolute;
+  height: 0;
+  width: 0.2rem;
+  background-color: #337ab7;
+  display: block;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  border-radius: 0.25rem;
+  content: '';
+  -webkit-transition: opacity 0.28s ease, height 0s linear 0.28s;
+  transition: opacity 0.28s ease, height 0s linear 0.28s;
+  opacity: 0;
+}
+
+.checkbox .helper::before {
+  top: 0.85rem;
+  left: 0.40rem;
+  -webkit-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.checkbox .helper::after {
+  top: 0.5rem;
+  left: 0;
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+
+.checkbox label:hover .helper {
+  color: #337ab7;
+}
+
+.checkbox input:checked~.helper {
+  color: #337ab7;
+}
+
+.checkbox input:checked~.helper::after, .checkbox input:checked~.helper::before {
+  opacity: 1;
+  -webkit-transition: height 0.28s ease;
+  transition: height 0.28s ease;
+}
+
+.checkbox input:checked~.helper::after {
+  height: 0.5rem;
+}
+
+.checkbox input:checked~.helper::before {
+  height: 1.2rem;
+  -webkit-transition-delay: 0.28s;
+  transition-delay: 0.28s;
+}
+button{
+  height: 60px;
+width: 40%;
+font-size: 1.5vw;
+font-family: 'Montserrat',sans-serif;
+font-weight: 700;
+margin-bottom: 100px;
+text-transform: uppercase;
+border: 3px solid #eb726b;
+background: transparent;
+color: #fff;
+}
+button:hover{
+  
+}

@@ -2057,6 +2057,20 @@ input::placeholder, textarea::placeholder {
   margin-left: 10%;
   padding-top: 35px;
 }
+.error{
+  font-size: 1.5vw;
+color: red;
+position: absolute;
+bottom: -15%;
+right: 27%;
+}
+.success{
+  font-size: 1.5vw;
+color: green;
+position: absolute;
+bottom: -15%;
+right: 27%;
+}
 
 /* Responsiveness for mobile devices */
 @media only screen and (max-width: 768px) {

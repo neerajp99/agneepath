@@ -244,7 +244,7 @@
           <ul>
             <li></li>
             <li>
-              <h4 class="event_subheading">tennis</h4>
+              <h4 class="event_subheading">squash</h4>
               <p class="event_paragraph2">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quae. Quos blanditiis magnam, iusto distinctio delectus fugiat nihil eaque soluta eligendi et est nulla quis enim, commodi. Perspiciatis, eius, enim?
               </p>
@@ -918,19 +918,19 @@
 		$registerCheck =  $_GET['contact'];
 
 		if ($registerCheck == "empty") {
-			echo "<p class = 'error'>You did not fill in all the fields</p>";
+			echo "<p class = 'error'>*You did not fill in all the fields</p>";
 		}
 		elseif ($registerCheck == "char") {
-			echo "<p class = 'error'>You used invalid character</p>";
+			echo "<p class = 'error'>*You used invalid character in name</p>";
 		}
 		elseif ($registerCheck == "email") {
-			echo "<p class = 'error'>You used invalid email</p>";
+			echo "<p class = 'error'>*You used an invalid email</p>";
 		}
     elseif ($registerCheck == "number") {
-			echo "<p class = 'error'>You used invalid mobile number</p>";
+			echo "<p class = 'error'>*You used an invalid mobile number</p>";
 		}
 		elseif ($registerCheck == "success") {
-			echo "<p class = 'success'>You have succesfully signed up!</p>";
+			echo "<p class = 'success'>*Cool! We got your message!!</p>";
 		}
 
 	}

@@ -35,7 +35,7 @@
               mysqli_stmt_bind_param($stmt, "ssss", $name, $email, $number, $message);
               mysqli_stmt_execute($stmt);
             }
-              header("Location: ../index.php?signup=success");
+              header("Location: ../index.php?contact=success");
   }
 }
  ?>
