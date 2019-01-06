@@ -863,21 +863,79 @@
     </div>
     <div class="right_contact">
 
-      <form action="includes/contact.php" method="POST" class="contact-form">
-
+      <form action="includes/contact.inc.php" method="POST" class="contact-form">
         <h4 class="formh">How can we help you?</h4>
-        <input type="text" name="name" placeholder=" Full Name">
-        <br>
-        <input type="text" name="email" placeholder=" Email">
-        <br>
-        <input type="text" name="number" placeholder="Mobile (+91-97809-09887)">
-        <br>
-        <textarea name="text" id="" cols="50" rows="15" placeholder="Message"></textarea>
-        <br>
+        <?php
+
+        if(isset($_GET['name'])) {
+		          $name = $_GET['name'];
+		          echo '<input type="text" name="name" placeholder=" Full Name" required value="'.$name.'">';
+	       } else {
+		         echo '<input type="text" name="name" placeholder=" Full Name" required>' ;
+
+	       }
+         echo "<br />";
+
+
+         if(isset($_GET['email'])) {
+           $email = $_GET['email'];
+           echo '<input type="text" name="email" placeholder=" Email" required value = "'.$email.'">';
+         } else {
+           echo '<input type="text" name="email" placeholder=" Email" required>';
+         }
+         echo "<br />";
+
+
+         if(isset($_GET['number'])) {
+           $number = $_GET['number'];
+           echo '<input type="text" name="number" placeholder="Mobile (+91-97809-09887)" required value = "'.$number.'">';
+         } else {
+           echo '<input type="text" name="number" placeholder="Mobile (+91-97809-09887)" required>';
+         }
+         echo "<br />";
+
+         if(isset($_GET['message'])) {
+           $message = $_GET['message'];
+           echo '<textarea  name="message" id="" cols="50" rows="15" placeholder="Message" value = "'.$message.'">'.'</textarea>';
+         } else {
+           echo '<textarea  name="message" id="" cols="50" rows="15" placeholder="Message"></textarea>';
+         }
+         echo "<br />";
+
+
+         ?>
+
         <button name="submit" type="submit" class="form_button">Submit</button>
 
 
       </form>
+      <?php
+
+
+	if (!isset($_GET['contact'])) {
+		exit();
+	} else {
+		$registerCheck =  $_GET['contact'];
+
+		if ($registerCheck == "empty") {
+			echo "<p class = 'error'>You did not fill in all the fields</p>";
+		}
+		elseif ($registerCheck == "char") {
+			echo "<p class = 'error'>You used invalid character</p>";
+		}
+		elseif ($registerCheck == "email") {
+			echo "<p class = 'error'>You used invalid email</p>";
+		}
+    elseif ($registerCheck == "number") {
+			echo "<p class = 'error'>You used invalid mobile number</p>";
+		}
+		elseif ($registerCheck == "success") {
+			echo "<p class = 'success'>You have succesfully signed up!</p>";
+		}
+
+	}
+
+       ?>
 
     </div>
   </div>
