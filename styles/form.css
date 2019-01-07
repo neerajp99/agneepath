@@ -36,7 +36,6 @@ html, body {
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
-
 }
 
 .register {
@@ -68,54 +67,70 @@ html, body {
   padding-bottom: 80px;
 }
 
-.checks{
+.checks {
   font-size: 1.3vw;
   color: #f0d2d2;
 }
-.helper{
+
+.helper {
   color: #f0d2d2;
 }
-.cc{
+
+.cc {
   color: #e9736e;
-margin-left: -20%;
-position: absolute;
-font-size: 1.3vw;
-font-family: 'Montserrat',sans-serif;
-margin-left: -11%;
-margin-top: 2%;;
+  margin-left: -20%;
+  position: absolute;
+  font-size: 1.3vw;
+  font-family: 'Montserrat', sans-serif;
+  margin-left: -11%;
+  margin-top: 2%;
+  ;
 }
-.register_form > input{
+
+.register_form>input {
   height: 50px;
-width: 42%;
-position: relative;
-margin-left: -1%;
-margin-top: 6%;
-border: none;
-outline: none;
-background: transparent;
-border-bottom: 2px solid #fff;
-font-size: 1.5vw;
-color: #f0d2d2;
+  width: 42%;
+  position: relative;
+  margin-left: -1%;
+  margin-top: 6%;
+  border: none;
+  outline: none;
+  background: transparent;
+  border-bottom: 2px solid #fff;
+  font-size: 1.5vw;
+  color: #f0d2d2;
 }
-.register_form > input:focus{
+
+.register_form>input:focus {
   border-bottom: 3px solid #e9736e;
 }
 
-.register_form > input::placeholder{
+.register_form>input::placeholder {
   font-size: 1.2vw;
 }
-.helper{
+
+.helper {
   position: relative;
-   left: 24%;
+  left: 24%;
 }
 
+.error {
+  color: red;
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.success {
+  color: green;
+  font-size: 2vw;
+  font-family: 'Montserrat', sans-serif;
+}
 
 .checkbox label,
 .form-radio label {
   position: relative;
   cursor: pointer;
   padding-left: 2rem;
-
   display: block;
 }
 
@@ -124,9 +139,7 @@ color: #f0d2d2;
   width: auto;
   opacity: 0.00000001;
   position: absolute;
-
 }
-
 
 .helper {
   position: relative;
@@ -159,7 +172,6 @@ color: #f0d2d2;
   border-radius: 0.0625rem;
   -webkit-transition: border-color 0.28s ease;
   transition: border-color 0.28s ease;
-
 }
 
 .checkbox .helper::before, .checkbox .helper::after {
@@ -214,18 +226,72 @@ color: #f0d2d2;
   -webkit-transition-delay: 0.28s;
   transition-delay: 0.28s;
 }
-button{
+
+button {
   height: 60px;
-width: 40%;
-font-size: 1.5vw;
-font-family: 'Montserrat',sans-serif;
-font-weight: 700;
-margin-bottom: 100px;
-text-transform: uppercase;
-border: 3px solid #eb726b;
-background: transparent;
-color: #fff;
+  width: 40%;
+  font-size: 1.5vw;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  margin-bottom: 100px;
+  text-transform: uppercase;
+  border: 3px solid #eb726b;
+  background: transparent;
+  color: #eb726b;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
 }
-button:hover{
-  
+
+button:hover {
+  background-color: #eb726b;
+  color: #fff;
+  -webkit-transition: 0.2s all ease-in-out;
+  -o-mozkit-transition: 0.2s all ease-in-out;
+  transition: 0.2s all ease-in-out;
+}
+
+@media only screen and (max-width: 767px) {
+
+  /* For mobile phones: */
+  body {
+    height: 100%;
+    width: 100%;
+  }
+
+  .register {
+    height: 100%;
+    width: 100%;
+  }
+
+  .register_heading {
+    font-size: 7vw;
+    margin-top: 10%;
+  }
+
+  .register_form {
+    width: 90%;
+  }
+
+  .cc {
+    font-size: 2.6vw;
+  }
+
+  .register_form>input {
+    font-size: 3vw;
+  }
+
+  .register_form>input::placeholder {
+    font-size: 2.3vw;
+  }
+
+  .checks {
+    font-size: 2.5vw;
+  }
+
+  button {
+    height: 70px;
+    width: 50%;
+    margin-top: 10%;
+  }
 }

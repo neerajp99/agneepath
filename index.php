@@ -119,13 +119,12 @@
     <div class="about-image">
       <svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1469" height="1954" viewBox="0 0 1469 1954">
         <metadata>
-          <?xpacket begin="﻿" id="W5M0MpCehiHzreSzNTczkc9d"?>
           <x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c142 79.160924, 2017/07/13-01:06:39        ">
             <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
               <rdf:Description rdf:about="" />
             </rdf:RDF>
           </x:xmpmeta>
-          <?xpacket end="w"?>
+
         </metadata>
         <defs>
           <style>
@@ -867,14 +866,23 @@
         <h4 class="formh">How can we help you?</h4>
         <?php
 
-        if(isset($_GET['name'])) {
-		          $name = $_GET['name'];
-		          echo '<input type="text" name="name" placeholder=" Full Name" required value="'.$name.'">';
+        if(isset($_GET['first'])) {
+		          $first = $_GET['first'];
+		          echo '<input type="text" name="first" placeholder=" First Name" required value="'.$first.'">';
 	       } else {
-		         echo '<input type="text" name="name" placeholder=" Full Name" required>' ;
+		         echo '<input type="text" name="first" placeholder=" First Name" required>' ;
 
 	       }
          echo "<br />";
+
+         if(isset($_GET['last'])) {
+ 		          $last = $_GET['last'];
+ 		          echo '<input type="text" name="last" placeholder=" Last Name" required value="'.$last.'">';
+ 	       } else {
+ 		         echo '<input type="text" name="last" placeholder=" Last Name" required>' ;
+
+ 	       }
+          echo "<br />";
 
 
          if(isset($_GET['email'])) {
@@ -898,44 +906,48 @@
            $message = $_GET['message'];
            echo '<textarea  name="message" id="" cols="50" rows="15" placeholder="Message" value = "'.$message.'">'.'</textarea>';
          } else {
-           echo '<textarea  name="message" id="" cols="50" rows="15" placeholder="Message"></textarea>';
+           echo '<textarea  name="message" id="" cols="50" rows="10" placeholder="Message"></textarea>';
          }
          echo "<br />";
+
+         echo '<button name="submit" type="submit" class="form_button">Submit</button>';
+
+
+
+
+         if (!isset($_GET['contact'])) {
+         exit();
+         } else {
+         $registerCheck =  $_GET['contact'];
+
+         if ($registerCheck == "empty") {
+         echo "<p class = 'error'>*You did not fill in all the fields.</p>";
+         }
+         elseif ($registerCheck == "firstchar") {
+         echo "<p class = 'error'>*You used invalid character in first name.</p>";
+         }
+         elseif ($registerCheck == "lastchar") {
+         echo "<p class = 'error'>*You used invalid character in last name.</p>";
+         }
+
+         elseif ($registerCheck == "email") {
+         echo "<p class = 'error'>*You used an invalid email.</p>";
+         }
+         elseif ($registerCheck == "number") {
+         echo "<p class = 'error'>*You used an invalid mobile number.</p>";
+         }
+         elseif ($registerCheck == "success") {
+         echo "<p class = 'success'>*Cool! We got your message!!</p>";
+         }
+
+         }
+
 
 
          ?>
 
-        <button name="submit" type="submit" class="form_button">Submit</button>
-
-
       </form>
-      <?php
 
-
-	if (!isset($_GET['contact'])) {
-		exit();
-	} else {
-		$registerCheck =  $_GET['contact'];
-
-		if ($registerCheck == "empty") {
-			echo "<p class = 'error'>*You did not fill in all the fields</p>";
-		}
-		elseif ($registerCheck == "char") {
-			echo "<p class = 'error'>*You used invalid character in name</p>";
-		}
-		elseif ($registerCheck == "email") {
-			echo "<p class = 'error'>*You used an invalid email</p>";
-		}
-    elseif ($registerCheck == "number") {
-			echo "<p class = 'error'>*You used an invalid mobile number</p>";
-		}
-		elseif ($registerCheck == "success") {
-			echo "<p class = 'success'>*Cool! We got your message!!</p>";
-		}
-
-	}
-
-       ?>
 
     </div>
   </div>
