@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
 
@@ -20,6 +22,12 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
   <link rel="stylesheet" href="styles/style.css">
   <link rel="stylesheet" href="styles/bootstrap.min.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="scripts/jquery.js"></script>
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
+  <script type="text/javascript" src="scripts/main.js"></script>
+  <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
+
   <title>Agneepath 3.0</title>
 </head>
 
@@ -27,7 +35,7 @@
   <!-- <div class="preloader-wrapper">
          <div class="preloader"> -->
 
-  <div class="header">
+  <!-- <div class="header">
     <div id="toggle">
       <div class="one"></div>
       <div class="two"></div>
@@ -43,7 +51,7 @@
         <li><a href="#alumni">Contact</a></li>
       </ul>
     </div>
-  </div>
+  </div> -->
 
   <div class="next">
     <div class="first">
@@ -56,7 +64,7 @@
           <div class="title-top  fours">AGNEEPATH</div>
         </div>
         <br><br>
-        <p class="section-details"> Ashoka University's annual sports festival. <br><span>[02-03 February, 2019] <br> Ashoka University</span></p>
+        <p class="section-details"> Ashoka University's annual sports festival. <br><span>[14-17 February, 2019] <br> Ashoka University</span></p>
 
       </div>
       <br>
@@ -79,7 +87,7 @@
         </ul>
         <br>
 
-        <a href="#hahah">
+        <a href="http://agneepath.club/agneepath/register_form.php">
           <button type="button" name="register" class="register-button">Regsiter</button></a>
       </div>
 
@@ -189,8 +197,7 @@
         <hr>
         <br>
         <br>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-          aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+        <p>Agneepath is the annual sports festival organised by Ashoka University, which is a multi-discipline liberal arts univeristy in India. The event is an invite based event for top colleges accross India. <br /> A 4 day event, with 15+ colleges, 6 sports, 10 event categories, 150+ matches, 2000+ players and with world class, state-of-the-art infrastructure by professional refrees, Agneepath provides absolute competitiveness on the pitch, nurturing future athletes in various sports and helping them take one step closer to their dream.</p>
 
       </div>
 
@@ -225,7 +232,10 @@
             <li>
               <h4 class="event_subheading">table tennis</h4>
               <p class="event_paragraph2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quae. Quos blanditiis magnam, iusto distinctio delectus fugiat nihil eaque soluta eligendi et est nulla quis enim, commodi. Perspiciatis, eius, enim?
+                <strong>Group Stage/Semi Finals & Finals</strong> <br><br>
+                 2 pools of 4 teams. Round robin within group. Two teams in each group to qualify for semi-fianls. Each fixture will include 5 games; two singles, followed by one doubles and concluded by two reverse singles. <br>
+                <br><em>Winners: </em>Rs. 6000 <br><em>Runner's up: </em>Rs.2800
+
               </p>
             </li>
           </ul>
@@ -234,7 +244,11 @@
           <ul>
             <li>
               <h4 class="event_subheading2">Volleyball</h4>
-              <p class="event_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem atque ipsam incidunt pariatur quis quae unde soluta quas in, qui voluptas sequi dicta vel, odit eius, a cum eos aspernatur!</p>
+              <p class="event_paragraph">
+                <strong>Group Stage/Semi Finals & Finals</strong> <br><br>
+                 A match will be best of 3 sets of 25 points. Finals will be for 5 sets, 4 sets of 25 points each and a decider of 15. Libero should be declared before commencement of the match. Maximum of 2 liberos per team allowed and libero exchange can be done only once in a match.<br>
+                <br><em>Winners: </em>Rs. 18000 <br><em>Runner's up: </em>Rs.8400
+              </p>
             </li>
             <li></li>
           </ul>
@@ -245,7 +259,10 @@
             <li>
               <h4 class="event_subheading">squash</h4>
               <p class="event_paragraph2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quae. Quos blanditiis magnam, iusto distinctio delectus fugiat nihil eaque soluta eligendi et est nulla quis enim, commodi. Perspiciatis, eius, enim?
+                <strong>Group Stage/Semi Finals & Finals</strong> <br><br>
+
+                Fixture will comprise of consecutive singles. 3 -on-3 matches. Best of 3 games for every match, semi finals and finals will be best of 5. <br>
+                <br><em>Winners: </em>Rs. 6000 <br><em>Runner's up: </em>Rs.3000
               </p>
             </li>
           </ul>
@@ -255,7 +272,16 @@
 
             <li>
               <h4 class="event_subheading2">men's football</h4>
-              <p class="event_paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem atque ipsam incidunt pariatur quis quae unde soluta quas in, qui voluptas sequi dicta vel, odit eius, a cum eos aspernatur!</p>
+              <p class="event_paragraph">
+                <strong>Group Stage</strong> <br>
+                  Game duration: 60 minutes, half time at 30 min. 4 pools of 4 teams and top 2 from each pool to qualify for semi-finals.
+                  <br><br>
+                  <strong>Semi Finals/Finals</strong> <br>
+                  Game duration: 70 minutes, half time at 35 min.
+                  <br>
+
+                <br><em>Winners: </em>Rs. 21000 <br><em>Runner's up: </em>Rs.9800
+              </p>
             </li>
             <li></li>
           </ul>
@@ -266,7 +292,12 @@
             <li>
               <h4 class="event_subheading">women's football </h4>
               <p class="event_paragraph2">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quidem, quae. Quos blanditiis magnam, iusto distinctio delectus fugiat nihil eaque soluta eligendi et est nulla quis enim, commodi. Perspiciatis, eius, enim?
+
+                  <strong>Group stage/Semi Finals & Finals</strong> <br><br>
+                3 pools of 4 teams each. Round robin within group. Top two teams from each each group qualifies or semi-finals. Duration of each game is 40 minutes and half time at 20 minutes.
+                  <br>
+
+                <br><em>Winners: </em>Rs. 15000 <br><em>Runner's up: </em>Rs.7000
               </p>
             </li>
           </ul>
@@ -904,7 +935,7 @@
 
          if(isset($_GET['message'])) {
            $message = $_GET['message'];
-           echo '<textarea  name="message" id="" cols="50" rows="15" placeholder="Message" value = "'.$message.'">'.'</textarea>';
+           echo '<textarea  name="message" id="" cols="50" rows="10" placeholder="Message" value = "'.$message.'">'.'</textarea>';
          } else {
            echo '<textarea  name="message" id="" cols="50" rows="10" placeholder="Message"></textarea>';
          }
@@ -912,39 +943,8 @@
 
          echo '<button name="submit" type="submit" class="form_button">Submit</button>';
 
-
-
-
-         if (!isset($_GET['contact'])) {
-         exit();
-         } else {
-         $registerCheck =  $_GET['contact'];
-
-         if ($registerCheck == "empty") {
-         echo "<p class = 'error'>*You did not fill in all the fields.</p>";
-         }
-         elseif ($registerCheck == "firstchar") {
-         echo "<p class = 'error'>*You used invalid character in first name.</p>";
-         }
-         elseif ($registerCheck == "lastchar") {
-         echo "<p class = 'error'>*You used invalid character in last name.</p>";
-         }
-
-         elseif ($registerCheck == "email") {
-         echo "<p class = 'error'>*You used an invalid email.</p>";
-         }
-         elseif ($registerCheck == "number") {
-         echo "<p class = 'error'>*You used an invalid mobile number.</p>";
-         }
-         elseif ($registerCheck == "success") {
-         echo "<p class = 'success'>*Cool! We got your message!!</p>";
-         }
-
-         }
-
-
-
          ?>
+
 
       </form>
 
@@ -961,17 +961,40 @@
   </div>
 
 
-
-  </div>
-
-
-  <!-- scripts goes here -->
   <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ=" crossorigin="anonymous"></script>
   <script type="text/javascript" src="scripts/jquery.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/2.0.2/TweenMax.min.js'></script>
   <script type="text/javascript" src="scripts/main.js"></script>
   <script type="text/javascript" src="bootstrap/js/bootstrap.min.js"></script>
-  <!-- scripts ends here -->
+  </div>
+  <?php
+  if (!isset($_GET['contact'])) {
+  exit();
+  } else {
+  $registerCheck =  $_GET['contact'];
+
+  if ($registerCheck == "empty") {
+  echo "<p class = 'error'>*You did not fill in all the fields.</p>";
+  }
+  elseif ($registerCheck == "firstchar") {
+  echo "<p class = 'error'>*You used invalid character in first name.</p>";
+  }
+  elseif ($registerCheck == "lastchar") {
+  echo "<p class = 'error'>*You used invalid character in last name.</p>";
+  }
+
+  elseif ($registerCheck == "email") {
+  echo "<p class = 'error'>*You used an invalid email.</p>";
+  }
+  elseif ($registerCheck == "number") {
+  echo "<p class = 'error'>*You used an invalid mobile number.</p>";
+  }
+  elseif ($registerCheck == "success") {
+  echo "<p class = 'success'>*Cool! We got your message!!</p>";
+  }
+
+  }
+  ?>
 </body>
 
 </html>

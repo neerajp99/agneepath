@@ -2318,12 +2318,12 @@ right: 27%;
   }
 
   .team-one>.team-image>.frame1>img, .team-three>.team-image3>.frame3>img {
-    width: 40%;
+    width: 50%;
     left: 5%;
   }
 
   .team-two>.team-image2>.frame2>img, .team-four>.team-image4>.frame4>img {
-    width: 40%;
+    width: 50%;
     right: 5%;
   }
 

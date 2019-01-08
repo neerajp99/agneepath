@@ -28,7 +28,7 @@
          <?php
 
 include "includes/db.inc.php";
-$sql    = "select * from register";
+$sql    = "select * from reg";
 $result = mysqli_query($mysqli, $sql);
 $check  = mysqli_num_rows($result);
 if ($check > 0) {
@@ -75,4 +75,4 @@ if ($check > 0) {
       </div>
     </div>
   </body>
-</html> 
+</html>
